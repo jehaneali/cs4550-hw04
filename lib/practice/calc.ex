@@ -7,13 +7,40 @@ defmodule Practice.Calc do
   def calc(expr) do
     # This should handle +,-,*,/ with order of operations,
     # but doesn't need to handle parens.
-    expr
-    |> String.split(~r/\s+/)
-    |> hd
-    |> parse_float
-    |> :math.sqrt()
+    # code in this section from https://www.digitalocean.com/community/conceptual_articles/understanding-order-of-operations
+    # precedence line is literally copied from ^
+    precedence = %{ "*" => 2, "/" => 2, "+" => 1, "-" => 1}
+    
+    expression = String.split(expr, ~r/\s+/)
+    output = []
+    op_stack = []
+    # |> hd
+    # |> parse_float
+    # |> :math.sqrt()
 
-    # Hint:
+    Enum.each(expression, sort(expression, output, op_stack))
+
+
+    def sort(op, output, op_stack) do
+      cond do
+        is_number(op) ->
+          output ++ [op]
+        true -> 
+          op_checker(op, op_stack)
+      end
+    end
+
+    def op_checker(op, list) do
+      cond do
+        precedence[op] >= hd[list] ->
+          [op | list]
+        true ->
+          op_checker(op, tl[list]
+      end
+    end  
+        
+      
+
     # expr
     # |> split
     # |> tag_tokens  (e.g. [+, 1] => [{:op, "+"}, {:num, 1.0}]
