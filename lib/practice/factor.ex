@@ -3,9 +3,9 @@ defmodule Practice.Factor do
   def factor(x) do
     #num = String.to_integer(x) <> "hello"
     #x <> "hey"
-    String.to_integer(x)
+    x = String.to_integer(x)
     p = 2
-    IO.puts(x<>"=")
+    #IO.puts(x<>"=")
     cond do
       #question: how do i do a loop?? very confused
       x >= p * p ->
