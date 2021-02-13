@@ -12,15 +12,13 @@ hw04.jehaneali.site
 https://github.com/jehaneali/cs4550-hw04.git
 
 4. How much of the functionality did you complete?
-Palindrome is complete, the other two are in progress 
-
+Palindrome is complete, the code for factor calculates but does not display, the code for evaluate is partially complete
 
 5. Did you successfully deploy? If not, what's broken?
-No, I couldn't find the _build folder
+Yes, I successfully deployed
 
 6. How comfortable do you feel with Elixir now?
 Not very comfortable
-
 
 7. Which parts of this assignment did you have trouble with, if any?
 Pretty much all of it -- I'm having trouble getting used to elixir, and 
