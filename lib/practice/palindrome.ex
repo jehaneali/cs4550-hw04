@@ -4,7 +4,7 @@ defmodule Practice.Palindrome do
 
   end
 
-  # credit for reverse_words and reverse_chars:
+  # credit for reverse_words:
   # https://github.com/NatTuck/scratch-2021-01/blob/master/notes-4550/06-elixir/rw.exs
   def reverse_words(line) do
     line
@@ -13,6 +13,8 @@ defmodule Practice.Palindrome do
     |> Enum.join(" ")
   end
 
+  # credit for reverse_chars:
+  # https://github.com/NatTuck/scratch-2021-01/blob/master/notes-4550/06-elixir/rw.exs
   def reverse_chars(word) do
     word
     |> String.to_charlist

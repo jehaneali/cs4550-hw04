@@ -3,8 +3,6 @@
     <p><%= link "← go back", to: "/" %></p>
     <h2>Palindrome Check Results</h2>
 
-    <!--<p>x = <%= @x %></p>
-    <p>2 * x = <%= @y %></p> -->
     <p>x = <%= @x %></p>
     <p> <%= @y %> </p>
   </div>
