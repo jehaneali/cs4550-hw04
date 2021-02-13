@@ -1,0 +1,39 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Jehane Ali
+
+2. What hostname did you deploy your app to?
+hw04.jehaneali.site
+
+
+3. What's the URL of your git for this assignment?
+https://github.com/jehaneali/cs4550-hw04.git
+
+4. How much of the functionality did you complete?
+Palindrome is complete, the other two are in progress 
+
+
+5. Did you successfully deploy? If not, what's broken?
+No, I couldn't find the _build folder
+
+6. How comfortable do you feel with Elixir now?
+Not very comfortable
+
+
+7. Which parts of this assignment did you have trouble with, if any?
+Pretty much all of it -- I'm having trouble getting used to elixir, and 
+Deployment was challenging 
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
