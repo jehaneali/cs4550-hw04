@@ -1,10 +1,18 @@
 defmodule Practice.Factor do
   # algorithm from https://people.revoledu.com/kardi/tutorial/BasicMath/Prime/Algorithm-PrimeFactor.html
+
   def factor(x) do
+    IO.puts "hello"
+    fList = [1]
     #num = String.to_integer(x) <> "hello"
     #x <> "hey"
     p = String.to_integer(x)
+
     divTwo(p)
+    loop(p, 1, fList)
+    to_string(fList)
+    IO.puts "hi"
+    IO.puts fList
     #p = Integer.parse(x)
     #p = 2
 
@@ -32,4 +40,19 @@ defmodule Practice.Factor do
         x
     end
   end
+
+  def loop(x, i, list) do
+    if i <= :math.sqrt(x) do
+      addToList(x, i+2, list)
+    end
+
+  end
+
+  def addToList(x, i, list) do
+    if rem(x, i) == 0 do
+      [i | list]
+      addToList(div(x, i), i, list)
+    end
+  end
+
 end
